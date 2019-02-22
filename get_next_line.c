@@ -6,7 +6,7 @@
 /*   By: rcorke <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/02/07 14:33:02 by rcorke        #+#    #+#                 */
-/*   Updated: 2019/02/07 14:33:05 by rcorke        ########   odam.nl         */
+/*   Updated: 2019/02/22 14:18:41 by rcorke        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,8 @@ int		get_next_line(const int fd, char **line)
 	t_list			*tmp;
 	int				check;
 
+	if (!line || !*line)
+		return (-1);
 	if (!leftover)
 		leftover = get_struct(fd, &leftover);
 	tmp = get_struct(fd, &leftover);
