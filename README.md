@@ -1,5 +1,5 @@
 # get_next_line
-42/get next line
+Read lines from a file.
 
 GET NEXT LINE tasks the student with creating a program that will read lines from a file delimited using the newline character, returning the following values:
 
